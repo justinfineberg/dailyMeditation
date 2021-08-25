@@ -46,6 +46,7 @@ useEffect(()=>{
   .then(res=>{
     let currentPrice = res.data.bpi.USD.rate
     setBitcoin(res.data.bpi.USD.rate)
+    
   
   }).catch(err=>{
     console.log(err)
