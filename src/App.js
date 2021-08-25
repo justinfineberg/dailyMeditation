@@ -34,6 +34,7 @@ useEffect(()=>{
   })
 },[])
 
+
 // useEffect(()=>{
 //   axios.get('https://api.openweathermap.org/data/2.5/weather?q=London&appid=64074cbaa4888425569f91d11f3467af')
 //   .then(res=>{
@@ -46,7 +47,7 @@ useEffect(()=>{
   .then(res=>{
     let currentPrice = res.data.bpi.USD.rate
     setBitcoin(res.data.bpi.USD.rate)
-    
+
   
   }).catch(err=>{
     console.log(err)
